@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.Product_List {
+.ProductList {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
