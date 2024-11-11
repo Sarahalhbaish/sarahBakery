@@ -13,7 +13,7 @@
   }
 }
 
-.storeimg{
+.Storeimg{
   width: 100%;
 }
 
@@ -39,4 +39,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.Product img { 
+  width: 500px;
+  height: 500px;
+}
+
+.Product div{
+  width: 50%;
+  height: 50%;
 }
