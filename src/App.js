@@ -2,25 +2,12 @@
 import './App.css';
 import storeimg from "./Bakery.webp";
 import ProductItem from './Components/ProductItem';
-// import cakeImg from './cake.jpg';
-// import pastriesImg from './pastries.jpeg';
+import products from "./products"
 
 function App() {
-//   const products = [
-//     {
-//         name: "cake",
-//         price: "10 KD",
-//         image: cakeImg
-//     },
-//     {
-//         name: "pastries",
-//         price: "5 KD",
-//         image: pastriesImg
-//     }
-// ];
-
-  // const ProductList = products.map((product, index) => (
-  //     ));
+  const ProductList = products.map((product, index) => (
+     <ProductItem/>
+      ));
 
   return (
     <div className="App">
@@ -28,7 +15,7 @@ function App() {
         <h3>Soft and Sweet</h3>
         <img className='Storeimg' src={storeimg} alt='bakery'/>
         <div className="ProductList">
-        <ProductItem/>
+        {ProductList}
       </div>
     </div>
   );
