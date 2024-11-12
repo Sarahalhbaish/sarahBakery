@@ -1,15 +1,13 @@
 import React from 'react'
-import cakeImg from '../cake.jpg';
 
-
-const ProductItem = () => {
+const ProductItem = (props) => {
  
 
   return (
     <div>
-    <img src={cakeImg} alt="cake" />
-    <h3>Cake</h3>
-    <h6>10 KD</h6>
+    <img src={props.myProduct.image} alt={props.myProduct.name} />
+    <h3>{props.myProduct.name}</h3>
+    <h6>{props.myProduct.price}</h6>
     </div>
   )
 }

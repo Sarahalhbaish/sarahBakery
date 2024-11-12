@@ -15,8 +15,13 @@
   width: 100%;
 }
 
-.Product img { 
-  width: 500px;
-  height: 500px;
+.ProductList img {
+  width: 300px;
 }
 
+.Page{
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
